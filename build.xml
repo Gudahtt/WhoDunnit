@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="Clue" default="main" basedir=".">
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="build" />
+	<property name="dist.jar" location="clue.jar" />
+	<property name="libs.dir" location="jars" />
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.jar}" />
+	</target>
+
+	<target name="makedir">
+		<mkdir dir="${build.dir}" />
+	</target>
+	
+	<target name="compile" depends="clean, makedir">
+		<javac
+			includeantruntime="false"
+			classpath=".:lib/google-gson-2.2.2/gson-2.2.2.jar"
+			srcdir="${src.dir}"
+			destdir="${build.dir}"
+			target="1.6"
+			debug="true"
+		/>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<jar destfile="${dist.jar}" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="clue.Clue" />
+				<attribute name="Class-Path" value="lib/google-gson-2.2.2/gson-2.2.2.jar" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="main" depends="compile, jar">
+		<description>Main target</description>
+	</target>
+</project>
