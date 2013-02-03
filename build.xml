@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<project name="Clue" default="main" basedir=".">
+<project name="WhoDunnit" default="main" basedir=".">
 	<property name="src.dir" location="src" />
 	<property name="build.dir" location="build" />
-	<property name="dist.jar" location="clue.jar" />
+	<property name="dist.jar" location="whodunnit.jar" />
 	<property name="libs.dir" location="jars" />
 
 	<target name="clean">
