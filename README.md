@@ -12,6 +12,11 @@ We are developing an electronic version of the board game “Clue” to broaden 
 The interface of the game shall closely resemble the board game version, featuring an identical game board, as well as the “detective notebooks” used by players to keep track of the information they have gathered so far. We seek to emulate the experience of playing the board game with friends, without the hassle of setting up an actual game board, moving player tokens, shuffling decks of cards, or rolling dice.
 
 
+Jar file
+=======
+Clue.jar contains the final version of this project submitted in Fall2012 for COMP3716
+
+
 Authors
 =======
 

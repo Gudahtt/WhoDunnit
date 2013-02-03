@@ -17,7 +17,6 @@
 	<target name="compile" depends="clean, makedir">
 		<javac
 			includeantruntime="false"
-			classpath=".:lib/google-gson-2.2.2/gson-2.2.2.jar"
 			srcdir="${src.dir}"
 			destdir="${build.dir}"
 			target="1.6"
@@ -28,8 +27,7 @@
 	<target name="jar" depends="compile">
 		<jar destfile="${dist.jar}" basedir="${build.dir}">
 			<manifest>
-				<attribute name="Main-Class" value="clue.Clue" />
-				<attribute name="Class-Path" value="lib/google-gson-2.2.2/gson-2.2.2.jar" />
+				<attribute name="Main-Class" value="ca.mun.whodunnit.WhoDunnit" />
 			</manifest>
 		</jar>
 	</target>
