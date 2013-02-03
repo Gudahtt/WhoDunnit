@@ -14,7 +14,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.model.Card;
 import ca.mun.whodunnit.model.Notebook;
 import ca.mun.whodunnit.model.Player;
@@ -36,7 +36,7 @@ public class NotebookPanel extends JPanel {
 	private JTextArea wNotes;
 	private ArrayList<JTextArea> textLabels;
 
-	public NotebookPanel(ClueMediator mediator) {
+	public NotebookPanel(WhoDunnitMediator mediator) {
 		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 		JPanel notebook = new JPanel(new GridLayout(22, 4));
 		this.textLabels = new ArrayList<JTextArea>();

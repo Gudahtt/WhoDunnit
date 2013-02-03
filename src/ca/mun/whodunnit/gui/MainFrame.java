@@ -10,7 +10,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.WindowConstants;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.listeners.LoadGameListener;
 import ca.mun.whodunnit.gui.listeners.MainFrameListener;
 import ca.mun.whodunnit.gui.listeners.QuitGameListener;
@@ -24,7 +24,7 @@ public class MainFrame extends JFrame {
 	private static final long serialVersionUID = 8649005162354159732L;
 	private JMenuItem save;
 	private GamePanel gamePanel;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 	private CardLayout cardLayout;
 	private final static String MENU_CARD = "Menu panel";
 	private final static String GAME_CARD = "Game panel";
@@ -33,7 +33,7 @@ public class MainFrame extends JFrame {
 	/**
 	 * @throws HeadlessException
 	 */
-	public MainFrame(ClueMediator mediator) throws HeadlessException {
+	public MainFrame(WhoDunnitMediator mediator) throws HeadlessException {
 		this.mediator = mediator;
 		gamePanel = new GamePanel(this);
 		MenuPanel menuPanel = new MenuPanel(this, mediator);
@@ -89,7 +89,7 @@ public class MainFrame extends JFrame {
 		pack();
 	}
 
-	public ClueMediator getMediator() {
+	public WhoDunnitMediator getMediator() {
 		return mediator;
 	}
 

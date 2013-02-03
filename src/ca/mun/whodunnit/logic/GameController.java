@@ -29,7 +29,7 @@ public class GameController {
 	/*
 	 * @param control
 	 */
-	public GameController(ClueController control) {
+	public GameController(WhoDunnitController control) {
 		this.broker = control.getBroker();
 		this.rand = new Random();
 		this.data = new SessionData();

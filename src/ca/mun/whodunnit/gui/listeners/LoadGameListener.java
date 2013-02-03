@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 
 import javax.swing.SwingWorker;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.MainFrame;
 
 public class LoadGameListener implements ActionListener {
 	private MainFrame mainFrame;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 
-	public LoadGameListener(MainFrame mainFrame, ClueMediator mediator) {
+	public LoadGameListener(MainFrame mainFrame, WhoDunnitMediator mediator) {
 		this.mediator = mediator;
 		this.mainFrame = mainFrame;
 	}

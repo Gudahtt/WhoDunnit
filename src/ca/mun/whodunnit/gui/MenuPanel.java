@@ -5,7 +5,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.listeners.LoadGameListener;
 import ca.mun.whodunnit.gui.listeners.NewGameListener;
 
@@ -15,7 +15,7 @@ public class MenuPanel extends JPanel {
 	 */
 	private static final long serialVersionUID = -8049644036188782142L;
 
-	public MenuPanel(MainFrame mainFrame, ClueMediator mediator) {
+	public MenuPanel(MainFrame mainFrame, WhoDunnitMediator mediator) {
 
 		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 

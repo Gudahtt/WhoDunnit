@@ -16,7 +16,7 @@ import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.listeners.SuggestionSubmitListener;
 import ca.mun.whodunnit.model.Card;
 
@@ -27,7 +27,7 @@ public class SuggestionFrame extends JFrame {
 	 */
 	private static final long serialVersionUID = -1229134758981260522L;
 
-	public SuggestionFrame(ClueMediator mediator, final GamePanel gamePanel) {
+	public SuggestionFrame(WhoDunnitMediator mediator, final GamePanel gamePanel) {
 		super();
 		this.setAlwaysOnTop(true);
 		getContentPane().setLayout(

@@ -25,7 +25,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.SwingWorker;
 import javax.swing.border.MatteBorder;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.api.Subscriber;
 import ca.mun.whodunnit.api.model.Direction;
 import ca.mun.whodunnit.api.model.SquareType;
@@ -46,7 +46,7 @@ public class GamePanel extends JPanel implements Subscriber {
 	 * 
 	 */
 	private static final long serialVersionUID = 1960462598652164047L;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 	private JButton suggestion, accusation, die, turn, undoMovement;
 	private JPanel gameBoard, controlPanel;
 	private DicePanel dPanel;

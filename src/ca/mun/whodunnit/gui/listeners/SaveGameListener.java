@@ -4,14 +4,14 @@ import java.awt.FileDialog;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.MainFrame;
 
 public class SaveGameListener implements ActionListener {
 	private MainFrame mainFrame;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 
-	public SaveGameListener(MainFrame mainFrame, ClueMediator mediator) {
+	public SaveGameListener(MainFrame mainFrame, WhoDunnitMediator mediator) {
 		this.mainFrame = mainFrame;
 		this.mediator = mediator;
 	}

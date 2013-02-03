@@ -15,7 +15,7 @@ import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.listeners.AccusationSubmitListener;
 import ca.mun.whodunnit.model.Card;
 
@@ -26,7 +26,7 @@ public class AccusationFrame extends JFrame {
 	 */
 	private static final long serialVersionUID = 6558322288515197744L;
 
-	public AccusationFrame(ClueMediator mediator, final GamePanel gamePanel) {
+	public AccusationFrame(WhoDunnitMediator mediator, final GamePanel gamePanel) {
 		super();
 		this.setAlwaysOnTop(true);
 		getContentPane().setLayout(

@@ -5,14 +5,14 @@ import java.awt.event.ActionListener;
 
 import javax.swing.SwingWorker;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.GamePanel;
 
 public class DiceListener implements ActionListener {
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 	private GamePanel gamePanel;
 
-	public DiceListener(ClueMediator mediator, GamePanel gamePanel) {
+	public DiceListener(WhoDunnitMediator mediator, GamePanel gamePanel) {
 		this.mediator = mediator;
 		this.gamePanel = gamePanel;
 	}

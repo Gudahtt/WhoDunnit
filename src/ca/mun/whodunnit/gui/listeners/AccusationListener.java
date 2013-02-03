@@ -5,15 +5,15 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.AccusationFrame;
 import ca.mun.whodunnit.gui.GamePanel;
 
 public class AccusationListener implements ActionListener {
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 	private GamePanel gamePanel;
 
-	public AccusationListener(ClueMediator mediator, GamePanel gamePanel) {
+	public AccusationListener(WhoDunnitMediator mediator, GamePanel gamePanel) {
 		this.mediator = mediator;
 		this.gamePanel = gamePanel;
 	}

@@ -2,19 +2,19 @@ package ca.mun.whodunnit.logic;
 
 import java.io.IOException;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.api.EventBroker;
 import ca.mun.whodunnit.model.SessionData;
 
-public class ClueController {
+public class WhoDunnitController {
 	private GameController game;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 	private EventBroker broker;
 
-	public ClueController() {
+	public WhoDunnitController() {
 		broker = new EventBroker();
 		game = new GameController(this);
-		mediator = new ClueMediator(this);
+		mediator = new WhoDunnitMediator(this);
 	}
 
 	/**
@@ -27,7 +27,7 @@ public class ClueController {
 	/**
 	 * @return the mediator
 	 */
-	public ClueMediator getMediator() {
+	public WhoDunnitMediator getMediator() {
 		return mediator;
 	}
 

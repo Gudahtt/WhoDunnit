@@ -7,7 +7,7 @@ import java.util.HashMap;
 import ca.mun.whodunnit.api.model.Direction;
 import ca.mun.whodunnit.api.model.PlayerType;
 import ca.mun.whodunnit.api.model.SquareType;
-import ca.mun.whodunnit.logic.ClueController;
+import ca.mun.whodunnit.logic.WhoDunnitController;
 import ca.mun.whodunnit.logic.GameController;
 import ca.mun.whodunnit.logic.TurnController;
 import ca.mun.whodunnit.model.Card;
@@ -20,8 +20,8 @@ import ca.mun.whodunnit.model.RoomNode;
 import ca.mun.whodunnit.model.SessionData;
 import ca.mun.whodunnit.model.Turn;
 
-public class ClueMediator {
-	private ClueController control;
+public class WhoDunnitMediator {
+	private WhoDunnitController control;
 	private GameController game;
 	private TurnController turn;
 	private SessionData data;
@@ -33,7 +33,7 @@ public class ClueMediator {
 	/**
 	 * @param control
 	 */
-	public ClueMediator(ClueController control) {
+	public WhoDunnitMediator(WhoDunnitController control) {
 		this.control = control;
 		game = control.getGameController();
 		turn = game.getTurnController();

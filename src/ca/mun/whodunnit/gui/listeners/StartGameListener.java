@@ -5,15 +5,15 @@ import java.awt.event.ActionListener;
 
 import javax.swing.SwingWorker;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.MainFrame;
 import ca.mun.whodunnit.gui.NewGamePanel;
 
 public class StartGameListener implements ActionListener {
 	private MainFrame mainFrame;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 
-	public StartGameListener(MainFrame mainFrame, ClueMediator mediator) {
+	public StartGameListener(MainFrame mainFrame, WhoDunnitMediator mediator) {
 		this.mainFrame = mainFrame;
 		this.mediator = mediator;
 	}

@@ -6,15 +6,15 @@ import java.util.ArrayList;
 
 import javax.swing.SwingWorker;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.gui.GamePanel;
 import ca.mun.whodunnit.gui.GameSquare;
 
 public class MovementListener implements MouseListener {
 	private GamePanel gamePanel;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 
-	public MovementListener(GamePanel gamePanel, ClueMediator mediator) {
+	public MovementListener(GamePanel gamePanel, WhoDunnitMediator mediator) {
 		this.gamePanel = gamePanel;
 		this.mediator = mediator;
 	}

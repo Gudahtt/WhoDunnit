@@ -7,7 +7,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.SwingWorker;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.model.Card;
 
 //submit button listener
@@ -16,10 +16,10 @@ public class SuggestionSubmitListener implements ActionListener {
 	private JComboBox suspectList;
 	private JComboBox weaponList;
 	private JFrame frame;
-	private ClueMediator mediator;
+	private WhoDunnitMediator mediator;
 
 	public SuggestionSubmitListener(JComboBox suspectList,
-			JComboBox weaponList, JFrame frame, ClueMediator mediator) {
+			JComboBox weaponList, JFrame frame, WhoDunnitMediator mediator) {
 		this.suspectList = suspectList;
 		this.weaponList = weaponList;
 		this.frame = frame;

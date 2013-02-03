@@ -7,7 +7,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import ca.mun.whodunnit.api.ClueMediator;
+import ca.mun.whodunnit.api.WhoDunnitMediator;
 import ca.mun.whodunnit.api.model.PlayerType;
 import ca.mun.whodunnit.gui.listeners.StartGameListener;
 import ca.mun.whodunnit.model.Card;
@@ -20,7 +20,7 @@ public class NewGamePanel extends JPanel {
 	private static ArrayList<CharacterPanel> characterPanels;
 	private JButton start;
 
-	public NewGamePanel(MainFrame mainFrame, ClueMediator mediator) {
+	public NewGamePanel(MainFrame mainFrame, WhoDunnitMediator mediator) {
 
 		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
