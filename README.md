@@ -25,6 +25,7 @@ The team consisted of:
 
 Mark Stacey
 Adam Sturge
+Matthew Newell
 Amanda Beaudoin
 Bukunola Ladele
 
